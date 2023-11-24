@@ -1,5 +1,6 @@
 import Menu from '../../components/Menu/Menu';
 import Card from '../../components/Card/Card';
+import Banner from '../../components/Banner/Banner';
 import blusabranca from '../img/blusinha_branca.jpeg'
 import jaquetavermelha from '../img/jaquetavermelha.jpeg'
 import saiapreta from '../img/saiapreta.jpeg'
@@ -9,16 +10,19 @@ import regatabrancamasc from '../img/regatabrancamasc.jpeg'
 import calca from '../img/calca.jpeg'
 import jaquetapretamasc from '../img/jaquetapretamasc.jpeg'
 import calcafem from '../img/calcafem.png'
+import jaquetapuffer from '../img/jaquetapuffer.jpeg'
+import bannerimg from '../img/banner.jpeg'
+
 
 
 import styles from './Home.module.css'
-
 function Home() {
-
   return (
     <>
       <Menu />
       <div className={styles.main}>
+        <Banner image={bannerimg}/>
+        <Card image={jaquetapuffer} titulo={"Jaqueta Puffer"} preco={"R$200"}/>
         <Card image={blusabranca} titulo={"Baby tee USA"} preco={"R$43.50"} />
         <Card image={jaquetavermelha} titulo={"Jaqueta vermelha"} preco={"R$110.30"} />
         <Card image={saiapreta} titulo={"Mini saia preta"} preco={"R$ 47.80"} />
@@ -28,9 +32,8 @@ function Home() {
         <Card image={calca} titulo={"Calça jeans oversized"} preco={"R$157"} />
         <Card image={jaquetapretamasc} titulo={"Jaqueta preta"} preco={"R$132"} />
         <Card image={calcafem} titulo={"Calça jeans wide leg"} preco={"R$146"} />
-      </div>
+        </div>
     </>
   );
 }
-
 export default Home;

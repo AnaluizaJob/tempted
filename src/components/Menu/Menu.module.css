@@ -21,9 +21,10 @@
   }
 
   .nav{
-    height: 35px;
+    height: 40px;
     width: 250px;
     display: flex;
+    font-style:normal;
     justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
 
